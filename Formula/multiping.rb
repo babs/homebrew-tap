@@ -1,22 +1,22 @@
 class Multiping < Formula
   desc "Tool to monitor several targets at once using icmp or tcp with minimum deps"
   homepage "https://github.com/babs/multiping/"
-  url "https://github.com/babs/multiping/archive/refs/tags/v1.4.0.tar.gz"
+  url "https://github.com/babs/multiping/archive/refs/tags/v1.5.0.tar.gz"
   sha256 "ed201b6be5fb0c102ab6f8696429fe4ccb892673f0559f1a5661b9d6dd11270d"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/babs/multiping/releases/download/v1.4.0/multiping-darwin-arm64.xz"
-      sha256 "0e3dff5279674201f32169384268efbb733cd6c931b18a6088560883970a9def"
+      url "https://github.com/babs/multiping/releases/download/v1.5.0/multiping-darwin-arm64.xz"
+      sha256 "a5ddefd5937bc493a5bacdba4b3a646e7afda5eb2b1c991ebd9a10bd890fe01f"
 
       def install
         bin.install "multiping-darwin-arm64" => "multiping"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/babs/multiping/releases/download/v1.4.0/multiping-darwin-amd64.xz"
-      sha256 "38ee756348f92218b877296890c1231603f17121a99e5887f1eac0358cb46428"
+      url "https://github.com/babs/multiping/releases/download/v1.5.0/multiping-darwin-amd64.xz"
+      sha256 "3a6f50757554aeef10653c26e3134c6850cfab69ebb702d4c6ac806872ca8f5d"
 
       def install
         bin.install "multiping-darwin-amd64" => "multiping"
@@ -26,16 +26,16 @@ class Multiping < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/babs/multiping/releases/download/v1.4.0/multiping-linux-arm64.xz"
-      sha256 "247267a01a39d71088842fe21939549b88b102699fc8feaa7ec2c22fd4c33db3"
+      url "https://github.com/babs/multiping/releases/download/v1.5.0/multiping-linux-arm64.xz"
+      sha256 "fce49c17a11bb5755d8b2ee0537ef8340a83436fec0d301a182ac45e2682a900"
 
       def install
         bin.install "multiping-linux-arm64" => "multiping"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/babs/multiping/releases/download/v1.4.0/multiping-linux-amd64.xz"
-      sha256 "d11e5081041fd1dcfc42c72a2ab03b2d75f03634635761cc31a33175eda51501"
+      url "https://github.com/babs/multiping/releases/download/v1.5.0/multiping-linux-amd64.xz"
+      sha256 "de85cea73f062056d5dc3d05bbfa0d94b2fb228a7b6b9c72ae52f1f77df1d0af"
 
       def install
         bin.install "multiping-linux-amd64" => "multiping"
