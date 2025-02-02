@@ -2,9 +2,9 @@ class Multiping < Formula
   desc "Tool to monitor several targets at once using icmp or tcp with minimum deps"
   homepage "https://github.com/babs/multiping/"
   url "https://github.com/babs/multiping/archive/refs/tags/v1.5.0.tar.gz"
+  version "1.5.0"
   sha256 "ed201b6be5fb0c102ab6f8696429fe4ccb892673f0559f1a5661b9d6dd11270d"
   license "Apache-2.0"
-  version "1.5.0"
 
   on_macos do
     if Hardware::CPU.arm?
